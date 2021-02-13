@@ -8,7 +8,9 @@ Instructions:
 
 Options:
 
-- The application uses the chart.js ![chart logo](https://www.chartjs.org/img/chartjs-logo.svg "Chart.js logo") library, so for full documentation, I refer you to the main page of the library.
+![chart logo](https://www.chartjs.org/img/chartjs-logo.svg "Chart.js logo")
+
+- The application uses the chart.js library, so for full documentation, I refer you to the main page of the library.
 - Without going through the documentation, we can quickly change the **fill color** of each bar by editing rules:
   `let color1 = 'rgba(85, 11, 164, 0.2)'`
   `let color2 = 'rgba(54, 162, 235, 0.2)'` etc...
