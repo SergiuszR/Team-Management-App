@@ -1,12 +1,12 @@
-This app allows you to generate a chart (bar, line, doughnut, pie, radar) based on data you enter (4 employees).
+# This app allows you to generate a chart (bar, line, doughnut, pie, radar) based on data you enter (4 employees).
 
-Instructions:
+## Instructions:
 
 1. Select what type of chart you are interested in
 2. Enter data in all fields (names and sold quantity)
 3. Press the "Generate" button
 
-Options:
+## Options:
 
 ![chart logo](https://www.chartjs.org/img/chartjs-logo.svg "Chart.js logo")
 
@@ -17,9 +17,9 @@ Options:
 
 The **border** color is set automatically (color1 - alpha channel).
 
-The application is responsive.
+## The application is responsive.
 
-To-do list:
+## To-do list:
 
 1. Ability to choose the number of team members.
 2. Set colors without messing with the code.
