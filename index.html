@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <title>Team Management App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li></li>
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <form id="graph-wheel">
+        <label for="graph">Choose A Graph:</label>
+        <select name=graph" id="graph" onchange="selectCheck()">
+          <option value="line">Line</option>
+          <option value="bar">Bar</option>
+          <option value="radar">Radar</option>
+          <option value="doughnut">Doughnut</option>
+          <option value="pie">Pie</option>
+        </select>
+      </form>
+      <div class="main-graph">
+        <canvas id="myChart" width="1000" height="350"></canvas>
+      </div>
+      <div class="details">
+        <div class="team-cards">
+          <div class="e-1">
+            <div class="name">
+              <form id="myform">
+                <input type="text" placeholder="name" id="myinput"  />
+            </div>
+            <div class="sale-score">
+              <input type="number" placeholder="pcs sold" id="saleinput" />
+            </div>
+          </form>
+          </div>
+          <div class="e-2">
+            <div class="name">
+              <form id="myform">
+                <input type="text" placeholder="name" id="myinput" />
+            </div>
+            <div class="sale-score">
+              <input type="number" placeholder="pcs sold" id="saleinput" />
+            </div>
+          </form>
+          </div>
+          <div class="e-3">
+            <div class="name">
+              <form id="myform">
+              <input type="text" placeholder="name" id="myinput"  />
+            </div>
+            <div class="sale-score">
+              <input type="number" placeholder="pcs sold" id="saleinput"  />
+            </div>
+          </form>
+          </div>
+          <div class="e-4">
+            <div class="name">
+              <form id="myform">
+              <input type="text" placeholder="name" id="myinput" />
+            </div>
+            <div class="sale-score">
+              <input type="number" placeholder="pcs sold" id="saleinput" />
+            </div>
+          </form>
+          </div>
+          
+        </div>
+      </div>
+      <div class="btns">
+      <button class="generate-graph" onclick="generate()">Generate</button>
+      <button class="reset-graph" onClick="window.location.reload();">Reset</button>
+    </div>
+      <footer></footer>
+    </div>
+    <script src="main.js" defer></script>
+  </body>
+</html>
